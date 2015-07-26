@@ -1,0 +1,111 @@
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#topBar{
+  background: #D3D3D3;
+}
+.summaryContainer{
+  background: #7e7e7e;
+  height: 100%;
+  width: 100%;
+  padding: none;
+
+}
+.col-md-1 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+  max-width: none;
+}
+#item1 {
+    background: url("../imgs/pStory.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+#item2 {
+    background: url("../imgs/pStory.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+#item3 {
+    background: url("../imgs/pStory.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+#item4 {
+    background: url("../imgs/pStory.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+#filmContact {
+  padding-left: 5%;
+}
+#contactImg {
+  max-width: 500px;
+}
+h2 {
+ font-size: 25px;
+}
+#input{
+  background-color: #8C8C8C;
+}
+.movieInfo {
+    padding-left: 0;
+}
+.movieInfo li{
+  display: inline;
+}
+#input {
+  border: 0;
+  height: 34px;
+  color: #333;
+}
+.form-control::-webkit-input-placeholder { color: black; }
+.form-control:-moz-placeholder { color: black; }
+.form-control::-moz-placeholder { color: black; }
+.form-control:-ms-input-placeholder { color: black; }
+.purchase {
+  height: 64px;
+}
+.calendar-divider{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.calendar-item{
+  margin-top:20px;
+  margin-bottom: 0px;
+  text-align: justify;
+}
+.min {
+  margin-top: 0px;
+}

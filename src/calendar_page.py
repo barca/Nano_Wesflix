@@ -55,8 +55,7 @@ main_page_start = '''
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="active"><a href="calendar.html">Calendar</a></li>
+                <li class="active"><a href="#">Calendar</a></li>
               </ul>
             <div class="input-group" style="padding-top: 8px">
               <input type="text" class="form-control" id="input" placeholder="Search for a specific trailer...">

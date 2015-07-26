@@ -58,7 +58,6 @@ main_page_content = '''
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="calendar.html">Calendar</a></li>
               </ul>
             <div class="input-group" style="padding-top: 8px">

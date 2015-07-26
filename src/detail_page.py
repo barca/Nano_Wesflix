@@ -17,7 +17,7 @@ main_page_start = '''
 
     <title>WesFlix</title>
 
-    <link href="../static/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <script src="../static/assets/js/ie-emulation-modes-warning.js"></script>
     <link href="../static/css/carousel.css" rel="stylesheet">
     <link href="../static/css/styles.css" rel="stylesheet">
@@ -111,8 +111,8 @@ end_page = '''
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../static/lib/jquery.min.js"></script>
-    <script src="../static/lib/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="../static/assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

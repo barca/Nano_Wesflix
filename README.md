@@ -9,8 +9,6 @@ cd src/
 python run.py
 ```
 
-a special thanks to twitter's bootstrap, which was used extensively in this app.
-
 
 #In Wesflix
 
@@ -19,5 +17,10 @@ The static file contains a few images that were unavailable for hotlinking, css,
 the src file contains the python files that generate the following pages
 
 fresh_tomatoes.py generates the homepage
+
 detail_page.py generates the detailed pages, containing the actual trailers
+
 calendar_page.py generates the calendar of the movie showtimes
+
+#resources used:
+Twitter Bootstrap

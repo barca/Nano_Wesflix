@@ -3,7 +3,7 @@ import os
 import re
 
 
-# Styles and scripting for the page
+# uppermost portion of the page, needs no templating
 main_page_start = '''
 <!DOCTYPE html>
 <html lang="en">
@@ -58,7 +58,7 @@ main_page_start = '''
 
 '''
 
-
+#mian content of the page, actual data templted in
 content_template = '''
    <div class="row featurette">
       <div class="container" style="padding-left:0;">
@@ -94,7 +94,7 @@ content_template = '''
         </p>
      </div>
 '''
-
+#footer
 end_page = '''
       <hr class="featurette-divider min" style="border-top-color: #fff">
       <!-- FOOTER -->
@@ -121,7 +121,11 @@ end_page = '''
 </html>
 '''
 
+'''
+input: a movie object
+output: a string, providing the html code for a single detailed page
 
+'''
 def set_contents(movie):
     content = content_template.format(
         movie_title=movie.title,
@@ -136,7 +140,11 @@ def set_contents(movie):
     )
     return (main_page_start + content + end_page)
 
+'''
+input: movies, a list of movies
+result: writes a detailed html file for each movie
 
+'''
 def write_detailed_pages(movies):
     # Create or overwrite the output file
 

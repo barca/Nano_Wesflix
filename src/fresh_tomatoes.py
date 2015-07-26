@@ -3,7 +3,7 @@ import os
 import re
 
 
-# Styles and scripting for the page
+# uppermost portion of the page, needs no templating
 main_page_head = '''
 <head>
     <html lang="en">
@@ -38,7 +38,7 @@ main_page_head = '''
 '''
 
 
-# The main page layout and title bar
+# The navbar, and non-tempated carousel information 
 main_page_content = '''
 <body>
     <div class="navbar-wrapper">
@@ -98,7 +98,7 @@ carousel_finished = '''
     </div>
 
 '''
-
+#templating string for carousel movies
 carousel_template = '''
         <div class="{is_active}" id="{item_id}">
           <img class="first-slide img-responsive"src="{wide_pic}">
@@ -112,7 +112,7 @@ carousel_template = '''
         </div>
 
 '''
-
+#division between carousel content and prewview content
 sec_two = '''
 
     <div class="container marketing">
@@ -120,6 +120,7 @@ sec_two = '''
       <!-- Three columns of text below the carousel -->
       <div class="row">
 '''
+#templating string for next weeks movies
 sec_two_template = '''
         <div class="col-lg-3">
           <img src="{poster}" alt="poster" height="200">
@@ -128,7 +129,7 @@ sec_two_template = '''
           <p><a class="btn btn-default" href="{movie_title}.html" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-3 -->
 '''
-
+#footer
 end_page = '''
     </div>
     <footer>
@@ -152,14 +153,18 @@ end_page = '''
 </html>
 '''
 
+'''
+input: movies, a list of movies
+output: a string, providing the html code for top half of the page
 
+'''
 def set_carousel(movies):
     # The HTML content for this section of the page
     content = ''
     id = 1
     is_active = "item active"
     for movie in movies:
-        # Extract the youtube ID from the url
+        # each caroousel needs a unique id
         item_id = "item" + str(id)
         # Append the tile for the movie with its content filled in
         content += carousel_template.format(
@@ -173,11 +178,16 @@ def set_carousel(movies):
         is_active = "item"
     return (main_page_content + content + carousel_finished)
 
+
+'''
+input: movies, a list of movies
+output: a string, providing the html code for bottom half of the page
+
+'''
 def set_next_week_lineup(movies):
 # The HTML content for this section of the page
     content = ''
     for movie in movies:
-        # Extract the youtube ID from the url
         # Append the tile for the movie with its content filled in
         content += sec_two_template.format(
             movie_title=movie.title,
@@ -188,7 +198,10 @@ def set_next_week_lineup(movies):
     return (sec_two + content + end_page)
 
 
-
+'''
+input: movies, a list of movies
+result: opens the default webbrowser to the generated html
+'''
 def open_movies_page(movies):
     # Create or overwrite the output file
     output_file = open('index.html', 'w')

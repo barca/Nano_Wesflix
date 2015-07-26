@@ -3,7 +3,7 @@ import os
 import re
 
 
-# Styles and scripting for the page
+# top of page, does not need templating
 main_page_start = '''
 
 <html lang="en">
@@ -76,7 +76,7 @@ main_page_start = '''
 
 '''
 
-
+#individual calendar item
 content_template = '''
     <div class="row featurette">
       <div class="col-md-2"><h2>{movie_title}</h2>
@@ -88,7 +88,7 @@ content_template = '''
       </div>
       <hr class="featurette-divider calendar-divider">
 '''
-
+#footer
 end_page = '''
       <!-- FOOTER -->
       <footer>
@@ -113,6 +113,11 @@ end_page = '''
 
 '''
 
+'''
+input: movies, a list of movies
+output: uses movies to generate html code for the page
+
+'''
 
 def set_contents(movies):
     content = ""
@@ -125,6 +130,11 @@ def set_contents(movies):
     return (main_page_start + content + end_page)
 
 
+'''
+input: movies, a list of movies
+output: html file contianing the calnedar of all movies
+
+'''
 def write_calendar(movies):
     # Create or overwrite the output file
 

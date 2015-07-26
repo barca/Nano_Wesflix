@@ -3,7 +3,7 @@ a version of wesflix for the nanodegree
 #How to Start the program.
 
 clone the repository
-run the commands 
+run the following commands
 ```
 cd src/
 python run.py

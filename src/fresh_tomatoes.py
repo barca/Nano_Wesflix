@@ -101,7 +101,7 @@ carousel_finished = '''
 
 carousel_template = '''
         <div class="{is_active}" id="{item_id}">
-          <img class="first-slide img-responsive"src="{wide_pic}" alt="First slide">
+          <img class="first-slide img-responsive"src="{wide_pic}">
           <div class="container">
             <div class="carousel-caption">
               <h1>{movie_title}</h1>

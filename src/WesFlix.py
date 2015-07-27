@@ -38,7 +38,7 @@ main_page_head = '''
 '''
 
 
-# The navbar, and non-tempated carousel information 
+# The navbar, and non-tempated carousel information
 main_page_content = '''
 <body>
     <div class="navbar-wrapper">
@@ -202,7 +202,7 @@ def set_next_week_lineup(movies):
 input: movies, a list of movies
 result: opens the default webbrowser to the generated html
 '''
-def open_movies_page(movies):
+def write_and_open_homepage(movies):
     # Create or overwrite the output file
     output_file = open('index.html', 'w')
 

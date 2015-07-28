@@ -1,4 +1,10 @@
 from media import movie
+#importing movie class  from media file
+
+'''
+each of these object instances represents an individual movie file
+entertainment.py is imported by a number of other files 
+'''
 
 the_philadelphia_story = movie(
     		"The Philadelphia Story",
@@ -118,12 +124,8 @@ blade_runner = movie(
 	"Sean Young"
 	)
 
-
-
 Movies = [
 		the_philadelphia_story, futurama, shawshank_redemption, 
 		jurrassic_world, dirty_harry, five_broken_cameras, 
 		doubt,blade_runner
 		]
-
-dirty_harry_list = [dirty_harry]
